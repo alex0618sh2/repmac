@@ -1,0 +1,14 @@
+ubuntu@techdep22:~$ repmac 02:42:0e:ac:4e:3e
+
+02-42-0e-ac-4e-3e
+02:42:0e:ac:4e:3e
+02-42-0E-AC-4E-3E
+02:42:0E:AC:4E:3E
+
+ubuntu@techdep22:~$ repmac 02-42-0E-AC-4E-3E
+
+02-42-0e-ac-4e-3e
+02:42:0e:ac:4e:3e
+02-42-0E-AC-4E-3E
+02:42:0E:AC:4E:3E
+
