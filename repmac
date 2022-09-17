@@ -1,0 +1,43 @@
+#!/bin/bash
+#Скрипт заменяющий в маке двоеточие на тире и на оборот.
+#Также изменяющий регистр букв
+#Форма вызова bash namefilescript macadress
+#echo
+#echo "$0"
+#echo "$1"
+#echo
+
+        mac=$1
+#echo "Переменная mac: $mac Переменная 1: $1"
+#echo "Переменная mac: $mac"
+#echo "Переменная 1: $1"
+#echo
+
+##########################################
+#echo "замена двоеточий на тире: $macdv"
+        macdv=`echo ${mac//:/-}`
+#macdv=`echo "${mac//:/-}"`
+#echo "$macdv"
+
+
+##########################################
+#echo "замена тире на двоеточие: $mactr"
+#mactr=`echo ${macdv//-/:}`
+        mactr=`echo ${mac//-/:}`
+#echo "$mactr"
+
+
+
+echo
+#echo "Переменная mac: $mac"
+#echo "Переменная macdv: $macdv"
+#echo "Переменная mactr: $mactr"
+#echo
+echo $macdv | tr [:upper:] [:lower:]
+echo $mactr | tr [:upper:] [:lower:]
+#echo
+echo $macdv | tr [:lower:] [:upper:]
+echo $mactr | tr [:lower:] [:upper:]
+echo
+
+
